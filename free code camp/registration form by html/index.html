@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Registration Form</h1>
+    </header>
+<div id="form">
+    <main id="form-form">
+        <p>Please fill out this form with the required information</p>
+        <form action="action.php">
+            <fieldset>
+                <label for="first name">
+                   Enter Your First Name:
+                <br>
+                    <input type="text" name="First name" id="first name">
+                </label>
+                <br>
+                <label for="last name">
+                    Enter Your last Name:
+                <br>
+                     <input type="text" name="last name" id="last name">
+                 </label>
+                <br>
+                 <label for="email">
+                    Enter Your email:
+                <br>
+                     <input type="email" name="email" id="email">
+                 </label>
+                <br>
+                 <label for="password">
+                    Enter Your password:
+                <br>
+                     <input type="password" name="passwors" id="password">
+                 </label>
+        </fieldset>
+            <br>
+        <fieldset>
+                <p> Account Type </p>
+                <label for="personal">
+                    <input type="radio" value="personal" name="Account" id="personal">Personal
+                </label>
+            
+                <label for="Business">
+                    <input type="radio" value="Business" name="Account" id="Business">Business
+                </label>
+        </fieldset>
+        <fieldset>
+            <p>Upload a profile picture:</p>
+            <label for="profile">
+                <input type="file" name="file" id="profile">
+            </label>   
+            <label for="age">
+                <p>Input your age (years):</p>
+                <input type="number" name="age" id="age" min="13" max="120" lenth="15">
+            </label>
+            <label for="referrer">
+                <p>How did you hear about us?</p>
+                <select  >
+                    <option value="select one">select one</option>
+                    <option value="free code camp news">free code camp news </option>
+                    <option value="free code camp news youtube channel">free code camp news youtube channel</option>
+                    <option value="free code camp news forum">free code camp news forum</option>
+                    <option value="other">other</option>
+                </select>
+            </label>
+            <br>
+            <label for="bio">
+                <p>provide a bio</p>
+                <textarea name="feedback" id="bio" placeholder="I likse coding on the beach"></textarea>
+            </label>
+        </fieldset>
+        <label for="terms">
+            <input type="checkbox" value="terms and condition" name="terms" id="terms">
+            I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and condition</a>
+        </label>
+        <input type="submit" value="submit">
+        </form>
+    </main>
+</div>
+</body>
+</html>
